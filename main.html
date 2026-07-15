@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAFE GROW Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .dashboard { max-width:980px; margin:3rem auto; padding:1.5rem; }
+      .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+      .card{ background:rgba(16,28,49,0.96); border:1px solid rgba(255,255,255,0.06); border-radius:12px; padding:1rem; text-align:center }
+      .card a{ display:inline-block; margin-top:0.75rem; padding:0.5rem 0.85rem; border-radius:10px; background:linear-gradient(135deg,#4fd1c5,#2c8ac6); color:#03111d; font-weight:700; text-decoration:none }
+    </style>
+  </head>
+  <body>
+    <main class="dashboard">
+      <header>
+        <h1>SAFE GROW — Dashboard</h1>
+        <p class="hero-copy">Manage your SAFE GROW accounts. Open any account below to view or edit its plan.</p>
+      </header>
+
+      <section class="dashboard-summary">
+        <article class="summary-card">
+          <h2>Total net worth</h2>
+          <p id="totalNetWorth">KES0.00</p>
+        </article>
+        <article class="summary-card">
+          <h2>Total withdrawals</h2>
+          <p id="totalWithdrawals">KES0.00</p>
+        </article>
+        <article class="summary-card">
+          <h2>Accounts with data</h2>
+          <p id="activeAccounts">0/3</p>
+        </article>
+        <article class="summary-card">
+          <h2>Best account</h2>
+          <p id="bestAccount">No account data yet</p>
+        </article>
+      </section>
+
+      <section class="account-list-card">
+        <h2>Account snapshot</h2>
+        <div id="accountList" class="account-list"></div>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <h2>Account — SG</h2>
+          <p>Account sheet: SG</p>
+          <a href="SG.html">Open SG</a>
+        </div>
+        <div class="card">
+          <h2>Account — SG2</h2>
+          <p>Account sheet: SG2</p>
+          <a href="SG2.html">Open SG2</a>
+        </div>
+        <div class="card">
+          <h2>Account — SG3</h2>
+          <p>Account sheet: SG3</p>
+          <a href="SG3.html">Open SG3</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>SAFE GROW © 2026 · Built for multi-account bankroll tracking</p>
+      <p>“Consistency beats intensity when intensity fades.”</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
